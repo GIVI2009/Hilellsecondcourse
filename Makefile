@@ -4,6 +4,7 @@ run:
 	echo 'UA'
 	@echo 'GIIIITTTT'
 	python main.py
+	python gg.py
 
 .PHONY: ins
 ins:
