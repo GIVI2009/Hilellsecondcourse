@@ -1,5 +1,4 @@
-from test_linters_and_formatters import (is_list_contains_only_numbers,
-                                         outputs, return_the_longer_string)
+from linters_and_formatters import (is_list_contains_only_numbers, outputs, return_the_longer_string)
 
 
 def test_return_the_longer_string():
@@ -9,9 +8,9 @@ def test_return_the_longer_string():
 
 
 def test_is_list_contains_only_numbers():
-    assert is_list_contains_only_numbers([1, 2, 3, 4, 5]) == True
-    assert is_list_contains_only_numbers([1, 2, "three", 4, 5]) == False
-    assert is_list_contains_only_numbers([]) == True
+    assert is_list_contains_only_numbers([1, 2, 3, 4, 5])
+    assert not is_list_contains_only_numbers([1, 2, "three", 4, 5])
+    assert is_list_contains_only_numbers([])
 
 
 def test_outputs(capsys):
