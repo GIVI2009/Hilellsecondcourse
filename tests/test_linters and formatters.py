@@ -1,4 +1,4 @@
-from linters_and_formatters import return_the_longer_string, is_list_contains_only_numbers, outputs
+from test_linters_and_formatters import return_the_longer_string, is_list_contains_only_numbers, outputs
 
 
 def test_return_the_longer_string():
