@@ -11,11 +11,11 @@ import config
 
 
 def send_email(
-    recipients: list[str],
-    *,
-    mail_body: str,
-    mail_subject: str,
-    attachment: str = None,
+        recipients: list[str],
+        *,
+        mail_body: str,
+        mail_subject: str,
+        attachment: str = None,
 ) -> None:
     TOKEN_API = config.TOKEN_API
     USER = config.USER
