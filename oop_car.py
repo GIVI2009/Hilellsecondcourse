@@ -24,10 +24,10 @@ class Car:
 
 
 # Приклад використання
-car = Car("Toyota Camry", 2020, 3_000_000)
-print(car)  # Model: Toyota Camry, Year: 2020, Price: 3000000 грн
+car = Car("BMW M8", 2024, 50_000_000)
+print(car)  # Model: BMW M8, Year: 2024, Price: 50000000 грн
 print(car.category)  # середнячок
 
 car.drive(50)
-print(car)  # Model: Toyota Camry, Year: 2020, Price: 2995000 грн
-print(car.category)  # середнячок
+print(car)
+print(car.category)
