@@ -1,18 +1,20 @@
 class Car:
-    def __init__(self, model, year, price):
+    def __init__(self, model: str, year: int, price: int):
         self.model = model
         self.year = year
         self.price = price
 
-    def drive(self, distance):
+    def drive(self, distance: int):
         cost_per_km = 10
         self.price -= cost_per_km * distance
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Model: {self.model}, Year: {self.year}, Price: {self.price} грн"
 
+    __repr__ = __str__
+
     @property
-    def category(self):
+    def category(self) -> str:
         if self.price > 10_000_000:
             return "елітне"
         elif 2_000_000 <= self.price <= 10_000_000:
