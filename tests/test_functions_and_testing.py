@@ -1,4 +1,4 @@
-from functions_and_testing import remove_spaces
+from old_files.functions_and_testing import remove_spaces
 
 
 def test_remove_spaces_no_spaces():

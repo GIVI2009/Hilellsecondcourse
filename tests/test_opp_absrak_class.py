@@ -1,4 +1,4 @@
-from opp_absrak_class import MarvelMovie, AvengersMovie, StandaloneMovie
+from old_files.opp_absrak_class import MarvelMovie, AvengersMovie, StandaloneMovie
 
 
 def test_avengers_movie_description():
