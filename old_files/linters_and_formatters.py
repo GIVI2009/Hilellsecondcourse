@@ -19,6 +19,7 @@ def is_list_contains_only_numbers(lst: list) -> bool:
 
 result2 = is_list_contains_only_numbers([1234567890, 3.14])
 
+
 # a function that outputs the type ribbon to the console
 # '*' * 80
 def outputs() -> None:
