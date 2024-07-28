@@ -1,23 +1,13 @@
-from utils import email_sender
+from fastapi import FastAPI
+
+app = FastAPI()
 
 
-def main():
-    mail_body = """
-    <html>
-    <body style="background-color:blue;">
-    <hr style="border:1px solid black;"> <!-- Чорний роздільник -->
-    <p style="color:yellow; font-style:italic; font-size:24px;">My homework</p> <!-- Слова більшого розміру -->
-    <hr style="border:1px solid black;"> <!-- Чорний роздільник -->
-    </body>
-    </html>
-    """
-    email_sender.send_email(
-        ["berulavagio2009@ukr.net", "berulavagio2009@gmail.com"],
-        mail_body=mail_body,
-        mail_subject="Hello! This is my homework!",
-        attachment="main.py",
-    )
+@app.get("/api/")
+def index() -> dict:
+    return {"status": "ok"}
 
 
-if __name__ == "__main__":
-    main()
+@app.get("/")
+def index_web():
+    return ('<h1>Hello World</h1>')
